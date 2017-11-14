@@ -3,47 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
   	<header>
-  		<img class="logo" src="img/nerds-logo.png">
+    <!-- Логотип — это ссылка на главную страницу--><!--сделал-->
+  		<a href="index.html"><img class="logo" src="img/nerds-logo.png"></a>
   		<nav class="main-nav">
-  		<menu>
+  		<!-- <menu> тут поменяй на ul--><!--сделал-->
+      <ul class="main-link">
   			<li><a href="#">Студия</a></li>
   			<li><a href="#">Клиенты</a></li>
-  			<li><a href="#">Магазин</a></li>
+  			<li><a href="catalog.html">Магазин</a></li>
   			<li><a href="#">Контакты</a></li>
-  		</menu>
-  		</nav>
+  		<!-- </menu> тут закрываешь ul-->
+  		</ul>
+      </nav>
   		<nav class="user-nav">
-  			<menu>
-  				<li><img src="img/cart-icon.png"><a href="#">Корзина</a></li>
-  			</menu>
+  			<!-- <menu> тоже ul--><!--сделал-->
+  			<ul class="user-link">
+        	<li><img src="img/carticon.png"><a href="#">Корзина</a></li>
+  			</ul>
+        <!-- </menu> и закрой его-->
   		</nav>
   		<section class="slider">
-  		<div class="slogan">
+  		<div class="first-slide">
   			<img src="img/slide1.png">
-  			<h3>Долго, дорого, скорпулёзно.</h3>
-  			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+  			<h3 class="slogan">Долго, дорого, скорпулёзно.</h3>
+  			<p class="about-it">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
   			<a href="#">Узнать больше</a>
   		</div>
   		<div class="math">
   			<img src="img/slide2.png">
-  			<h3>Любим математику как никто другой.</h3>
-  			<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+  			<h3 class="slogan">Любим математику как никто другой.</h3>
+  			<p class="about-it">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
   			<a href="#">Узнать больше</a>
   		</div>
   		<div class="night">
   			<img src="img/slide3.png">
-  			<h3>Только ночь, только хардкор.</h3>
-  			<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+  			<h3 class="slogan">Только ночь, только хардкор.</h3>
+  			<p class="about-it">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
   			<a href="#">Узнать больше</a>
   		</div>
   		<div class="buttons">
-  			<a href="#"><img src="img/Shape1.png"></a>
-  			<a href="#"><img src="img/Shape1copy2.png"></a>
-  			<a href="#"><img src="img/Shape1copy3.png"></a>
-  			<img src="img/active-button.png">
+        <form>
+          <label>
+            <input type="radio" name="#">
+          </label>
+          <label>
+            <input type="radio" name="#">
+          </label>
+          <label>
+            <input type="radio" name="#">
+          </label>
+        </form>
+  			<!-- <a href="#"><img src="img/Shape1.png"></a>  input[type=“radio”] и label делай все три так-->
+  			<!--<a href="#"><img src="img/Shape1copy2.png"></a>
+  			<a href="#"><img src="img/Shape1copy3.png"></a>-->
+  			<!-- <img src="img/active-button.png"> не нужно - убирай-->
   		</div>
   		</section>
   	</header>
@@ -53,19 +72,19 @@
   				<img src="img/illustration-1.jpg">
   				<h2>Веб-сайты</h2>
   				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  				<button>Заказать</button>
+  				<a href="catalog.html">Заказать</a><!--ссылка оформленая как кнопка-->
   			</div>
   			<div class="item">
   				<img src="img/illustration-2.jpg">
   				<h2>Приложения</h2>
   				<p>Покорите Топ - 10 приложений...</p>
-  				<button>Заказать</button>
+  				<a href="catalog.html">Заказать</a><!--ссылка оформленая как кнопка-->
   			</div>
   			<div class="item">
   				<img src="img/illustration-3.jpg">
   				<h2>Презентации</h2>
   				<p>Вы даже не подозреваете, на сколько вы изумительны!</p>
-  				<button>Заказать</button>
+  				<a href="catalog.html">Заказать</a><!--ссылка оформленая как кнопка-->
   			</div>
   		</section>
   		<hr>
@@ -77,22 +96,30 @@
   				<li>Веб-сайтов любой сложности</li>
   				<li>Мобильных приложений для  и </li>
   				<li>Слайдшоу и видео для корпаративных презентаций</li>
-  				<!--Как сделать красные полосочки?-->
+  				<!--Как сделать красные полосочки? с помощью css- когда дойдем расскажу-->
   			</ul>
   		</section>
   		<section class="sharp">
   			<img class="color-logo" src="img/nerds-illustration.jpg">
   			<p class="precision">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЁМ</p>
-  			<p><b>125<sup>%</sup></b>Уровень самоотдачи</p>
-  			<p><b>100<sup>%</sup></b>Соблюдение сроков</p>
-  			<p><b>50<sup>%</sup></b>Минимальная предоплата</p>
+        <!-- внизу таблица --><!--Сделал-->
+        <table>
+          <tr>
+            <td><b>125<sup>%</sup></b></td>
+            <td><b>100<sup>%</sup></b></td>
+            <td><b>50<sup>%</sup></b></td>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
   		</section>
   		<hr>
   		<section class="our-project">
-  			<a href="#"><img class="htmlacademy" src="img/logo-1.png"></a>
-  			<a href="#"><img class="borodinski" src="img/logo-2.png"></a>
-  			<a href="#"><img class="pink" src="img/logo-3.png"></a>
-  			<a href="#"><img class="mishka" src="img/logo-4.png"></a>
+      <!-- тут замучаешься - вырезай одной большой картинкой и делай эту картинку ссылкой на сайт академии --><!--сделал-->
+  			<a href="https://htmlacademy.ru/intensive/htmlcss"><img class="htmlacademy" src="img/logo-big.png"></a>
   		</section>
   		<hr>
   	</main>
@@ -104,7 +131,22 @@
   			<br>
   			<p>191186, Санкт-Петербург. ул. Б. Конюшенная, д. 19/8 <br>тел.+7(812)275-75-75</p>
   			<br>
-  			<button>Напишите нам</button>
+  			<a href="#open">Напишите нам</a><!--ссылка оформленая как кнопка-->
+        <!-- У тебя не закрыть див open --><!--закрыл-->
+  			<div id="open" class="write-to-us">
+  			 <h1>Напишите нам</h1>
+  			 <button class="closed">X</button>
+  			 <form name="information">
+    				<p>Ваше имя:</p>
+    				<input type="text" name="#" value="Представьтесь пожалуйста">
+    				<p>Ваш e-mail:</p>
+    				<input type="text" name="#" value="Для отправки ответа">
+    				<p>Текст письма в свободной форме</p>
+    				<input type="text" name="#" value="В свободной форме">
+            <!-- у кнопки type="submit" -->
+  				  <button type="submit">Отправить</button><!--Поправил-->			
+  			</form>
+        </div>
   		</section>
   		<section class="social-network">
   			<ul>

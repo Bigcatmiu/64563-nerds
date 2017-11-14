@@ -1,0 +1,34 @@
+body{
+	margin: 0px;
+	padding: 0px;
+
+	font-family: "Roboto", Arial, sans-serif;
+}
+a{
+	text-decoration: none;
+}
+header{
+	background-color: #eeeeee;
+}
+.main-nav .main-link{
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+	list-style-type: none;
+
+
+}
+.user-nav {
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+	list-style-image: url(../img/cart-icon.png);
+}
+.slogan {
+	font-size: 55px;
+	line-height: 55px;
+}
+.about-it {
+	font-size: 16px;
+	line-height: 24px;
+}

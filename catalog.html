@@ -3,17 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header>
-		<img class="background" src="img/greyback.png">
-  		<img class="logo" src="img/nerds-logo.png">
+	<!-- убери img класс background --><!--убрал-->
+		<a href="index.html"><img class="logo" src="img/nerds-logo.png"></a>
   		<nav class="main-nav">
-  		<menu>
+  		<!-- <menu> ul--><!--сделал-->
+  		<ul>
   			<li><a href="#">Студия</a></li>
   			<li><a href="#">Клиенты</a></li>
   			<li><a href="#">Магазин</a></li>
   			<li><a href="#">Контакты</a></li>
+  		</ul>
   		</menu>
   		</nav>
   		<nav class="user-nav">
@@ -24,17 +28,21 @@
   		<h1>Магазин готовых шаблонов</h1>
 	</header>
 	<main>
+		<aside>
 		<section class="switches">
 		<form>
+		<!-- отбей сложенность -->
 			<h2>Стоимость:</h2>
 			<div class="slider">
 			<input type="range" name="" min="0" max="15000">
 			<div class="value">
 			<span>От</span>
+			<!-- здесь уточню что имелось ввиду -->
 			<input type="number" name="low-cost">
 			</div>
 			<div class="value">
 			<span>До</span>
+
 			<input type="number" name="higth-cost">
 			</div>
 			</div>
@@ -68,11 +76,11 @@
 					<label for="gallary">Галерея</label>
 				
 					<input type="checkbox" name="basket" id="basket">
-					<label for="basket">Корзина</label>
-					<input type="submit" value="Показать">
-				
+					<label for="basket">Корзина</label>				
 			</div>
+			<button type="submit">Показать</button>
 		</form>
+		</aside>
 		</section>
 		<section class="template-shop">
 			<nav class="template-sorting">
@@ -82,25 +90,67 @@
 					<button class="active">По цене</button>
 					<button>По типу</button>
 					<button>По названию</button>
-					<!--Как сделать стрелочки вверх и вниз?-->
+					<!--Как сделать стрелочки вверх и вниз? уточню - можно через css - отвечу на твой вопрос-->
 				</form>
 				</div>
 			</nav>
 		<div class="template">
-			<a href="#"><img src="img/img-sedona.jpg"></a>
-			<a href="#"><img src="img/img-pink.jpg"></a>
-			<a href="#"><img src="img/img-barbershop.jpg"></a>
-			<a href="#"><img src="img/img-mishka.jpg"></a>
-			<a href="#"><img src="img/img-aplus.jpg"></a>
-			<a href="#"><img src="img/img-kvast.jpg"></a>
+		<!-- у тебя каждая a будет в section class="template-cart" в ней вложена ссылка и в ней вложен серый блок с названием и ссылкой-->
+			<section class="template-cart">
+				<a href="#Sedona"><img src="img/img-sedona.jpg"></a>
+				<div class="grey-box" id="Sedona">
+					<h2>Sedona</h2>
+					<p>Информационный сайт для туристов</p>
+					<a href="#">9 900 руб.</a>
+				</div>
+			</section>
+			<section class="template-cart">
+				<a href="#Pink"><img src="img/img-pink.jpg"></a>
+				<div class="grey-box" id="Pink">
+					<h2>Pink App</h2>
+					<p>Продуктовый лендинг приложения для iOS и Android</p>
+					<a href="#">9 900 руб.</a>
+				</div>
+			</section>
+			<section class="template-cart">
+				<a href="#Barber"><img src="img/img-barbershop.jpg"></a>
+				<div class="grey-box" id="Barber">
+					<h2>Barbershop</h2>
+					<p>Сайт салоны красоты. Для мужчин, да.</p>
+					<a href="#">9 900 руб.</a>
+				</div>
+			</section>
+			<section class="template-cart">
+				<a href="#MISHKA"><img src="img/img-mishka.jpg"></a>
+				<div class="grey-box" id="MISHKA">
+					<h2>MISHKA</h2>
+					<p>Интернет-магазин  вязаных игрушек</p>
+					<a href="#">9 900 руб.</a>
+				</div>
+			</section>
+			<section class="template-cart">
+				<a href="#Plus"><img src="img/img-aplus.jpg"></a>
+				<div class="grey-box" id="Plus">
+					<h2>A Plus</h2>
+					<p>Лендинг курсов повышения квалификации</p>
+					<a href="#">9 900 руб.</a>
+				</div>
+			</section>
+			<section class="template-cart">
+				<a href="#Kvast"><img src="img/img-kvast.jpg"></a>
+				<div class="grey-box" id="Kvast">
+					<h2>КВАСТ</h2>
+					<p>Промо-сайт производителя крафтового кваса</p>
+					<a href="#">9 900 руб.</a>
+				</div>
+			</section>
 		</div>	
 		<nav class="template-nav">
-			<form>
-				<button><a href="#">1</a></button>
-				<button><a href="#">2</a></button>
-				<button><a href="#">3</a></button>
-				<button><a href="#">Следующая</a></button>
-			</form>
+			<!-- тут не форма, а просто ссылки --><!--сделал-->
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">Следующая</a>
 		</nav>
 	</section>
 	</main>
@@ -112,7 +162,22 @@
   			<br>
   			<p>191186, Санкт-Петербург. ул. Б. Конюшенная, д. 19/8 <br>тел.+7(812)275-75-75</p>
   			<br>
-  			<button>Напишите нам</button>
+  			<a href="#open">Напишите нам</a><!--ссылка оформленая как кнопка-->
+        <!-- У тебя не закрыть див open --><!--закрыл-->
+  			<div id="open" class="write-to-us">
+  			 <h1>Напишите нам</h1>
+  			 <button class="closed">X</button>
+  			 <form name="information">
+    				<p>Ваше имя:</p>
+    				<input type="text" name="#" value="Представьтесь пожалуйста">
+    				<p>Ваш e-mail:</p>
+    				<input type="text" name="#" value="Для отправки ответа">
+    				<p>Текст письма в свободной форме</p>
+    				<input type="text" name="#" value="В свободной форме">
+            <!-- у кнопки type="submit" -->
+  				  <button type="submit">Отправить</button><!--Поправил-->			
+  			</form>
+        </div>
   		</section>
   		<section class="social-network">
   			<ul>
