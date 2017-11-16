@@ -24,11 +24,161 @@ header{
 	text-transform: uppercase;
 	list-style-image: url(../img/cart-icon.png);
 }
-.slogan {
+
+.slide {
 	font-size: 55px;
 	line-height: 55px;
 }
+
 .about-it {
 	font-size: 16px;
 	line-height: 24px;
+}
+
+.learn-more{
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+
+}
+
+.item h2 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.item p {
+	font-size: 16px;
+	line-height: 24px;
+}
+.item a {
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+} 
+.little-studio {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: medium;
+}
+.principles {
+	font-size: 16px;
+	line-height: 24px;
+}
+.about-us b {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+}
+.about-us li {
+	font-size: 16px;
+	line-height: 24px;
+	list-style-image: url(../img/line.png);
+}
+.precision {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.first-row {
+	font-size: 45px;
+	line-height: 10,06px;
+	font-weight: bold;
+}
+.second-row {
+	font-size: 16px;
+	line-height: 18px;
+}
+.contacts h2 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.contacts p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+}
+.contacts a {
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	/* включу когда сделаю красный фон
+	color: #ffffff;
+	*/
+}
+.write-to-us h1 {
+	font-size: 45px;
+	line-height: 45px;
+}
+/* что-то сдесь не так, может упростить вложение?
+.contacts .write-to-us .information p {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+	color: black;
+} 
+*/
+.discount h2 {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+}
+.discount p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #444444;
+}
+
+/* стили только для catalog.html*/
+
+.shop {
+	font-size: 55px;
+	line-height: 55px;
+}
+.switches h2 {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+.switches button {
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.runner {
+	background-color: #eeeeee;
+}
+.layout h3 {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/* А может тут както по другому сделать?
+.layout label{
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+*/
+.switches button {
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.template-sorting a {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.template-sorting h2 {
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
 }

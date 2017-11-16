@@ -12,20 +12,20 @@
 		<a href="index.html"><img class="logo" src="img/nerds-logo.png"></a>
   		<nav class="main-nav">
   		<!-- <menu> ul--><!--сделал-->
-  		<ul>
+  		<ul class="main-link">
   			<li><a href="#">Студия</a></li>
   			<li><a href="#">Клиенты</a></li>
   			<li><a href="#">Магазин</a></li>
   			<li><a href="#">Контакты</a></li>
   		</ul>
-  		</menu>
+  		
   		</nav>
   		<nav class="user-nav">
-  			<menu>
-  				<li><a href="#">Корзина</a></li>
-  			</menu>
+  		<ul>
+  			<li><a href="#">Корзина</a></li>
+  		</ul>
   		</nav>
-  		<h1>Магазин готовых шаблонов</h1>
+  		<h1 class="shop">Магазин готовых шаблонов</h1>
 	</header>
 	<main>
 		<aside>
@@ -34,21 +34,24 @@
 		<!-- отбей сложенность -->
 			<h2>Стоимость:</h2>
 			<div class="slider">
-			<input type="range" name="" min="0" max="15000">
+			<input class="runner" type="range" name="" min="0" max="15000">
 			<div class="value">
-			<span>От</span>
+			<form>
+				<span>От</span>
+				<input type="number" name="low-cost">
 			<!-- здесь уточню что имелось ввиду -->
-			<input type="number" name="low-cost">
+			</form>
 			</div>
 			<div class="value">
+			<form>
 			<span>До</span>
-
 			<input type="number" name="higth-cost">
+			</form>
 			</div>
 			</div>
 			<br>
 			<div class="layout">
-				<h3>Сетка</h3>
+				<h3>Сетка:</h3>
 					<input type="radio" name="model" value="adaptive" id="adaptive">
 					<label for="adaptive">Адаптивная</label>
 				<br>
@@ -60,7 +63,7 @@
 					<input type="radio" name="model" value="fixed" id="fixed">
 					<label for="fixed">Фиксированая</label>
 			</div>
-			<div>
+			<div class="layout">
 				<h3>Особенности:</h3>
 				
 					<input type="checkbox" name="slider" checked id="slider">
@@ -86,12 +89,10 @@
 			<nav class="template-sorting">
 				<h2>Сортировать:</h2>
 				<div>
-				<form>
-					<button class="active">По цене</button>
-					<button>По типу</button>
-					<button>По названию</button>
+					<a href="">По цене</a>
+					<a href="">По типу</a>
+					<a href="">По названию</a>
 					<!--Как сделать стрелочки вверх и вниз? уточню - можно через css - отвечу на твой вопрос-->
-				</form>
 				</div>
 			</nav>
 		<div class="template">
@@ -166,14 +167,16 @@
         <!-- У тебя не закрыть див open --><!--закрыл-->
   			<div id="open" class="write-to-us">
   			 <h1>Напишите нам</h1>
-  			 <button class="closed">X</button>
+  			 <button class="closed">
+          		<img src="img/close-cross.png">   
+        	 </button>
   			 <form name="information">
     				<p>Ваше имя:</p>
-    				<input type="text" name="#" value="Представьтесь пожалуйста">
+    				<input type="text" name="#" placeholder="Представьтесь пожалуйста">
     				<p>Ваш e-mail:</p>
-    				<input type="text" name="#" value="Для отправки ответа">
+    				<input type="text" name="#" placeholder="Для отправки ответа">
     				<p>Текст письма в свободной форме</p>
-    				<input type="text" name="#" value="В свободной форме">
+    				<input type="text" name="#" placeholder="В свободной форме">
             <!-- у кнопки type="submit" -->
   				  <button type="submit">Отправить</button><!--Поправил-->			
   			</form>
